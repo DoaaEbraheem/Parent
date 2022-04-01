@@ -56,6 +56,7 @@ public class CreateCalendarPage extends PageBase{
 		setTextElementText(FromTime, From);
 		FromTime.sendKeys(Keys.ENTER);
 		setTextElementText(ToTime, to);	
+		ToTime.sendKeys(Keys.ENTER);
 		
 		clickButton(DDLInput);
 		clickButton(item1);
