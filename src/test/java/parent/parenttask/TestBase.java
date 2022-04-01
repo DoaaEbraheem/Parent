@@ -28,7 +28,7 @@ public class TestBase {
 	public static FileInputStream fis;
 	// soft assertion method
 	protected SoftAssert softassert = new SoftAssert();
-
+	public String namee=faker .name().firstName();
 
 
 	// Initiate the Chrome browser
@@ -79,11 +79,11 @@ public class TestBase {
 	}
 
 	// close browser
-	/*@AfterSuite
+	@AfterSuite
 	public void quitBrowser() {
 		driver.quit();
 		eyes.abortIfNotClosed();
-	}*/
+	}
 
 }
 

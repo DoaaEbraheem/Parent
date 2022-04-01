@@ -13,5 +13,12 @@ public class CalenderTest extends TestBase{
 		CalenderObject.openaddnew();
 		
 	}
+	
+	@Test
+	public void Checkeventname() {
+		
+		CalenderObject=new CalenderPage(driver);
+		CalenderObject.findEvent("Event: "+namee);
+	}
 
 }

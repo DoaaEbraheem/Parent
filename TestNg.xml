@@ -4,11 +4,7 @@
 
 	<test name="PArent">
 		<classes>
-			<class name="parent.parenttask.LoginPageTest" />
-			<class name="institute.InstituteTest" />
-			<class name="institute.OverViewTest" />
-			<class name="calendar.CalenderTest" />
-			<class name="calendar.CreateCalendarTest" />
+			<class name="parent.parenttask.Secnario" />
 			
 		</classes>
 				

@@ -6,13 +6,15 @@ import parent.parenttask.TestBase;
 
 public class CreateCalendarTest extends TestBase {
 	CreateCalendarPage CreateCalendarObject;
-	String name=faker .name().firstName();
-	String dateTime="01 Apr 22";
+	
+	String dateTime=faker .number().numberBetween(01, 29)+" Apr 22";
+	int minutes= faker .number().numberBetween(01, 50);
 	String Description=faker .name().fullName();
+	
 	@Test
-	public void CreateNewEvent() {
+	public void CreateNewEvent() throws InterruptedException {
 		CreateCalendarObject = new CreateCalendarPage(driver);
-		CreateCalendarObject.addEvent(name,Description,dateTime,"01:00","02:00");
+		CreateCalendarObject.addEvent(namee,Description,dateTime,"01:"+minutes,"02:"+minutes);
 
 	}
 

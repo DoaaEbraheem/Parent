@@ -2,32 +2,60 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-01T19:15:04 EET" name="Default suite" finished-at="2022-04-01T19:15:13 EET" duration-ms="9232">
+  <suite started-at="2022-04-01T23:36:10 EET" name="Default suite" finished-at="2022-04-01T23:36:16 EET" duration-ms="6594">
     <groups>
     </groups>
-    <test started-at="2022-04-01T19:15:04 EET" name="Default test" finished-at="2022-04-01T19:15:13 EET" duration-ms="9232">
+    <test started-at="2022-04-01T23:36:10 EET" name="Default test" finished-at="2022-04-01T23:36:16 EET" duration-ms="6594">
       <class name="parent.parenttask.Secnario">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:parent.parenttask.Secnario@5745ca0e]" started-at="2022-04-01T19:13:56 EET" name="openBrowser" finished-at="2022-04-01T19:15:04 EET" duration-ms="68239" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:parent.parenttask.Secnario@6c42f2a1]" started-at="2022-04-01T23:35:56 EET" name="openBrowser" finished-at="2022-04-01T23:36:10 EET" duration-ms="14029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="name()[pri:0, instance:parent.parenttask.Secnario@5745ca0e]" started-at="2022-04-01T19:15:04 EET" name="name" finished-at="2022-04-01T19:15:13 EET" duration-ms="8919" status="FAIL">
-          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+        <test-method signature="name()[pri:0, instance:parent.parenttask.Secnario@6c42f2a1]" started-at="2022-04-01T23:36:10 EET" name="name" finished-at="2022-04-01T23:36:16 EET" duration-ms="6348" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
             <message>
-              <![CDATA[Element should have been "select" but was "input"
+              <![CDATA[invalid argument: File not found : /Screenshots/samsung.jpg
+  (Session info: chrome=100.0.4896.60)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-4FDI1PV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: driver.version: unknown]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [826660244103e6b0802c48a442636619, sendKeysToElement {id=53222442-7745-484c-8e80-5c6eb5bf353c, value=[Ljava.lang.CharSequence;@6cc1da7b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62236/devtoo..., se:cdpVersion: 100.0.4896.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (826660244103e6b0802c48a442636619)] -> id: imageInput]
+Session ID: 826660244103e6b0802c48a442636619]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "input"
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : /Screenshots/samsung.jpg
+  (Session info: chrome=100.0.4896.60)
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-4FDI1PV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.<init>(Select.java:49)
-at parent.parenttask.PageBase.selectDropdownmenu(PageBase.java:30)
-at calendar.CreateCalendarPage.addEvent(CreateCalendarPage.java:54)
-at calendar.CreateCalendarTest.CreateNewEvent(CreateCalendarTest.java:15)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [826660244103e6b0802c48a442636619, sendKeysToElement {id=53222442-7745-484c-8e80-5c6eb5bf353c, value=[Ljava.lang.CharSequence;@6cc1da7b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62236/devtoo..., se:cdpVersion: 100.0.4896.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (826660244103e6b0802c48a442636619)] -> id: imageInput]
+Session ID: 826660244103e6b0802c48a442636619
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+at calendar.CreateCalendarPage.addEvent(CreateCalendarPage.java:67)
+at calendar.CreateCalendarTest.CreateNewEvent(CreateCalendarTest.java:17)
 at parent.parenttask.Secnario.name(Secnario.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -59,21 +87,25 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- name -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:parent.parenttask.Secnario@5745ca0e]" started-at="2022-04-01T19:15:13 EET" name="screenshotOnFailure" finished-at="2022-04-01T19:15:13 EET" duration-ms="236" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:parent.parenttask.Secnario@6c42f2a1]" started-at="2022-04-01T23:36:16 EET" name="screenshotOnFailure" finished-at="2022-04-01T23:36:16 EET" duration-ms="182" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=name status=FAILURE method=Secnario.name()[pri:0, instance:parent.parenttask.Secnario@5745ca0e] output={null}]]]>
+                <![CDATA[[TestResult name=name status=FAILURE method=Secnario.name()[pri:0, instance:parent.parenttask.Secnario@6c42f2a1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:parent.parenttask.Secnario@6c42f2a1]" started-at="2022-04-01T23:36:16 EET" name="quitBrowser" finished-at="2022-04-01T23:36:18 EET" duration-ms="1184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
       </class> <!-- parent.parenttask.Secnario -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

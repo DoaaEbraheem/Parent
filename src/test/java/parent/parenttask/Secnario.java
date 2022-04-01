@@ -26,13 +26,13 @@ public class Secnario extends TestBase{
 		OverViewTestObject= new OverViewTest();
 		OverViewTestObject.Opencalen();
 		
-		CalenderTestObject= new CalenderTest();
+    	CalenderTestObject= new CalenderTest();
 		CalenderTestObject.Calender();
 		
 		CreateCalendarTestObject = new CreateCalendarTest();
 		CreateCalendarTestObject.CreateNewEvent();
 		
-		
+		CalenderTestObject.Checkeventname();
 		
 		
 		
